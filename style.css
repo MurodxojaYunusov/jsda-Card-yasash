@@ -1,0 +1,48 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vb;
+    background-color: gold;
+}
+.navbar{
+    width: 400px;
+    height: 400px;
+}
+img{
+    width: 500px;
+    height: 500px;
+    max-width: 500px;
+    min-height: 100vh;
+    animation: img 8s infinite;
+
+}
+@keyframes img{
+    50%
+    {
+        transform:  translate(500px) rotate(90deg) rotate(180deg);
+        top: 100px;
+        left: 100px;
+        right: 100px;
+        bottom: 100px;
+        transform-origin: 50%;
+        scale: 2;
+    }
+    100%
+    {
+        transform:  translate(1000px) rotate(180deg) rotate(360deg);
+        left:  100px;
+        top:  100px;
+        transform-origin: 50%;
+        bottom:  100px;
+        right:  100px;
+        scale: 2;
+    }
+
+}
